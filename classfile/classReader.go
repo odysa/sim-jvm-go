@@ -38,7 +38,7 @@ func (c *classReader) readUint16s() []uint16 {
 	}
 	return res
 }
-func (c *classReader) readBytes(size int) []byte {
+func (c *classReader) readBytes(size uint32) []byte {
 	val := c.data[:size]
 	c.data = c.data[size:]
 	return val
