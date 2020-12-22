@@ -1,6 +1,6 @@
 package runTimeData
 
-type frame struct {
-	lower *frame
+type Frame struct {
+	lower *Frame
 	localVars localVars
 }
